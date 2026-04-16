@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juárez 3D Web</title>
+  <style>
+    /* Reset y blanco y negro puro */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: white;
+      font-family: 'Georgia', 'Times New Roman', Times, serif;
+      line-height: 1.618; /* Proporción áurea en interlineado */
+      color: black;
+    }
+
+    /* Contenedor con ancho basado en proporción áurea */
+    .container {
+      max-width: 800px;  /* 800 / 1.618 ≈ 494 para altura visual */
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    /* Título principal - ocupa espacio con respiro */
+    .titulo {
+      font-size: 3rem;
+      font-weight: normal;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+    }
+
+    /* Subtítulo / lema - segunda jerarquía */
+    .lema {
+      font-size: 1.2rem;
+      font-weight: normal;
+      font-style: italic;
+      margin-bottom: 2rem;
+      color: #333;
+      border-left: 2px solid black;
+      padding-left: 1.5rem;
+    }
+
+    /* Separador sutil */
+    .separador {
+      width: 80px;
+      height: 1px;
+      background: #ccc;
+      margin: 2rem 0;
+    }
+
+    /* Texto principal - bloque con ritmo */
+    .texto-principal {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+    }
+
+    .texto-principal p {
+      margin-bottom: 1.5rem;
+    }
+
+    /* Lista de servicios - horizontal pero con espacio */
+    .servicios {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin: 2rem 0;
+      padding: 0;
+    }
+
+    .servicios li {
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #444;
+    }
+
+    .servicios li:not(:last-child):after {
+      content: "·";
+      margin-left: 1rem;
+      color: #ccc;
+    }
+
+    /* Bloque de impacto - visualmente destacado */
+    .impacto {
+      font-size: 1.5rem;
+      font-weight: bold;
+      line-height: 1.3;
+      margin: 2.5rem 0;
+      padding: 1.5rem 0;
+      border-top: 1px solid #eee;
+      border-bottom: 1px solid #eee;
+    }
+
+    /* Llamada a la acción */
+    .cta {
+      font-size: 1.3rem;
+      margin: 2rem 0;
+    }
+
+    /* Contacto - simple y claro */
+    .contacto {
+      margin: 3rem 0 2rem;
+      padding-top: 1rem;
+      border-top: 1px solid #eee;
+    }
+
+    .contacto-item {
+      font-size: 0.9rem;
+      margin-bottom: 0.5rem;
+      font-family: monospace;
+    }
+
+    /* Nota final */
+    .nota {
+      font-size: 0.7rem;
+      color: #666;
+      margin-top: 3rem;
+      text-align: center;
+    }
+
+    /* Enlaces sin color */
+    a {
+      color: black;
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 4px;
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- 1. Título -->
+  <div class="titulo">
+    JUÁREZ<br>
+    3D WEB
+  </div>
+
+  <!-- 2. Lema -->
+  <div class="lema">
+    Laboratorio de Innovación Digital
+  </div>
+
+  <div class="separador"></div>
+
+  <!-- 3. Texto principal -->
+  <div class="texto-principal">
+    <p>Creemos presencia digital que funciona.<br>
+    Desarrollo web · Sistemas a la medida · Visualización 3D · Recorridos virtuales.</p>
+
+    <p>Tu negocio necesita estar donde te buscan.<br>
+    Una página profesional, un sistema ágil, o un recorrido 3D que muestre tu proyecto antes de existir.</p>
+
+    <p>Todo eso es parte de un mismo objetivo:<br>
+    hacer que tu inversión digital trabaje para ti todos los días.</p>
+  </div>
+
+  <!-- Servicios (refuerzo visual horizontal) -->
+  <ul class="servicios">
+    <li>Desarrollo web</li>
+    <li>Sistemas a la medida</li>
+    <li>Visualización 3D</li>
+    <li>Recorridos virtuales</li>
+  </ul>
+
+  <!-- 4. Frase de impacto (el mensaje central) -->
+  <div class="impacto">
+    La presencia digital no es un gasto.<br>
+    Es la herramienta más rentable que puedes tener.
+  </div>
+
+  <p class="texto-principal">
+    No importa si vendes productos, servicios o propiedades:<br>
+    si no estás en digital, no existes para quien te busca.
+  </p>
+
+  <!-- 5. Llamada a la acción -->
+  <div class="cta">
+    ¿Listo para invertir en lo que sí funciona?<br>
+    Hablemos.
+  </div>
+
+  <!-- Contacto -->
+  <div class="contacto">
+    <div class="contacto-item">📱 771 123 4567</div>
+    <div class="contacto-item">✉️ <a href="mailto:hola@juarez3dweb.com">hola@juarez3dweb.com</a></div>
+    <div class="contacto-item">🌐 www.juarez3dweb.com</div>
+  </div>
+
+  <div class="nota">
+    Innovación digital · Resultados reales
+  </div>
+
+</div>
+
+</body>
+</html>
